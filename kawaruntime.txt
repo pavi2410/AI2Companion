@@ -1,0 +1,1 @@
+D:\GitHub\pavi2410\appinventor\appinventor\buildserver\src\com\google\appinventor\buildserver\resources>java -cp "../../../../../../../lib/kawa/kawa-1.11-modified.jar;../../../../../../../build/components/AndroidRuntime.jar;../../../../../../../build/components/deps/*" kawa.repl -P me.pavi2410.ai2companion -C runtime.scm

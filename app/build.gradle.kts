@@ -74,15 +74,3 @@ android.applicationVariants.all {
     }
     registerPostJavacGeneratedBytecode(files(outputKawaClasses).builtBy(compileKawaTask))
 }
-
-//project.afterEvaluate {
-//    task generateYailRuntime(type: JavaExec) {
-//        dependsOn(compileDebugJavaWithJavac)
-//
-//        classpath = files("D:\\AndroidSDK\\platforms\\android-30\\android.jar") + files(compileDebugJavaWithJavac.classpath) + files(compileDebugJavaWithJavac.destinationDir) + files("libs/kawa-1.11-modified.jar")
-//        main = "kawa.repl"
-//        args "-d", "build/intermediates/kawa/debug/classes/", "-P", android.defaultConfig.applicationId, "-C", "src/main/kawa/runtime.scm"
-//    }
-//
-//    compileDebugJavaWithJavac.finalizedBy generateYailRuntime
-//}

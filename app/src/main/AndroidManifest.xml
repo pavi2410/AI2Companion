@@ -55,7 +55,8 @@
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout|smallestScreenSize"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateHidden"
-            tools:ignore="MissingClass">
+            tools:ignore="MissingClass"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -75,7 +76,8 @@
         <activity
             android:name="com.google.appinventor.components.runtime.SplashActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="behind">
+            android:screenOrientation="behind"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

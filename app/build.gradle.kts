@@ -3,12 +3,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion(30)
-    buildToolsVersion("30.0.3")
+    compileSdk = 31
 
     defaultConfig {
-        minSdkVersion(21)
-        targetSdkVersion(30)
+        minSdk = 21
+        targetSdk = 30
 
         applicationId = "edu.mit.appinventor.aicompanion3"
         versionCode = 1
@@ -26,13 +25,8 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
     packagingOptions {
-        exclude("META-INF/DEPENDENCIES")
+        this.resources.excludes.add("META-INF/DEPENDENCIES")
     }
 }
 

@@ -35,6 +35,7 @@
         android:required="false" />
 
     <!--    <uses-permission android:name="android.permission.READ_LOGS" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name="com.google.appinventor.components.runtime.ReplApplication"

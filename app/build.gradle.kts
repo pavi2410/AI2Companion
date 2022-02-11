@@ -44,7 +44,7 @@ android.applicationVariants.all {
     val compileKawaTask = tasks.register<JavaExec>("compile${name.capitalize()}KawaSources") {
         val javaCompile = javaCompileProvider.get()
         dependsOn(javaCompile)
-        classpath(configurations["androidApis"])
+        classpath(configurations.androidApis)
         classpath(javaCompile.classpath)
         classpath(javaCompile.outputs.files)
         inputs.files(
